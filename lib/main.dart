@@ -1,35 +1,19 @@
+// import 'package:actividad_imagen_sebastian_medina/column.dart';
 import 'package:flutter/material.dart';
-import 'navBar.dart';
-import 'hero.dart';
-import 'products.dart';
+import 'store.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Quita la etiqueta de debug
-      home: Scaffold(
-        backgroundColor: const Color(0xFFF5F6FA),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20),
-          child: SingleChildScrollView(  // 👈 Esto habilita el scroll
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // opcional
-              children: [
-                NavBar(),
-                HeroSection(),
-                Products(),
-              ],
-            ),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(body: Store()),
     );
   }
 }

@@ -7,14 +7,18 @@ class NavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 10),
+        padding: const EdgeInsets.only(
+          top: 20,
+          left: 10,
+          right: 10,
+          bottom: 10,
+        ),
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(color: const Color(0xFFE6F3FF), width: 1.8),
-           
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -34,7 +38,7 @@ class NavBar extends StatelessWidget {
                   ),
                   const SizedBox(width: 12),
                   const Text(
-                    'Store Name',
+                    'LikeMyke',
                     style: TextStyle(
                       fontSize: 18,
                       color: Color(0xFF2274E6), // azul más vivo
@@ -53,12 +57,19 @@ class NavBar extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: const Color(0xFFEBEEF2), width: 1.0),
+                      border: Border.all(
+                        color: const Color(0xFFEBEEF2),
+                        width: 1.0,
+                      ),
                     ),
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
-                        const Icon(Icons.notifications, color: Color(0xFF2274E6), size: 20),
+                        const Icon(
+                          Icons.notifications,
+                          color: Color(0xFF2274E6),
+                          size: 20,
+                        ),
                         Positioned(
                           right: 8,
                           top: 8,
@@ -68,7 +79,10 @@ class NavBar extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: Colors.red,
                               shape: BoxShape.circle,
-                              border: Border.all(color: Colors.white, width: 1.6),
+                              border: Border.all(
+                                color: Colors.white,
+                                width: 1.6,
+                              ),
                             ),
                           ),
                         ),
@@ -83,10 +97,17 @@ class NavBar extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: const Color(0xFFEBEEF2), width: 1.0),
+                      border: Border.all(
+                        color: const Color(0xFFEBEEF2),
+                        width: 1.0,
+                      ),
                     ),
                     child: const Center(
-                      child: Icon(Icons.more_vert, color: Color(0xFF2274E6), size: 20),
+                      child: Icon(
+                        Icons.more_vert,
+                        color: Color(0xFF2274E6),
+                        size: 20,
+                      ),
                     ),
                   ),
                 ],
