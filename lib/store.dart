@@ -4,6 +4,7 @@ import 'models/transaction_model.dart';
 import 'widgets/custom_nav_bar.dart';
 import 'widgets/balance_card.dart';
 import 'widgets/transaction_item.dart';
+import 'widgets/add_transaction_button.dart';
 
 class Store extends StatefulWidget {
   const Store({super.key});
@@ -60,6 +61,8 @@ class _StoreState extends State<Store> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.bgSoft,
+      floatingActionButton: const AddTransactionButton(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: SafeArea(
         child: Column(
           children: [
