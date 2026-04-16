@@ -6,6 +6,7 @@ import 'widgets/balance_card.dart';
 import 'widgets/transaction_item.dart';
 import 'widgets/add_transaction_button.dart';
 import 'widgets/custom_bottom_bar.dart';
+import 'widgets/search_bar_widget.dart';
 
 class Store extends StatefulWidget {
   const Store({super.key});
@@ -82,6 +83,8 @@ class _StoreState extends State<Store> {
                       incomes: 700000.00,
                       spendings: 90000.00,
                     ),
+                    const SizedBox(height: 24),
+                    const SearchBarWidget(),
                     const SizedBox(height: 32),
                     _buildSectionHeader("Categorías populares"),
                     const SizedBox(height: 16),
