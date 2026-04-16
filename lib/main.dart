@@ -1,4 +1,5 @@
 // import 'package:actividad_imagen_sebastian_medina/column.dart';
+import 'theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'store.dart';
 
@@ -13,7 +14,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Store()),
+      title: 'LikeMyke Finance',
+      theme: AppTheme.lightTheme,
+      home: const Store(),
     );
   }
 }
